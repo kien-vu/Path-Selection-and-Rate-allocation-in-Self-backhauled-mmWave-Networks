@@ -11,16 +11,24 @@ The package contains a simulation environment, based on Matlab, that reproduces 
 #Abstract of Article
 
 *System requirement*
-%    MATLAB version: 9.1 (R2016b) \n
+%    MATLAB version: 9.1 (R2016b) 
+
 %    OS: Windows 7 amd64 version 6.1
+
 %    Java version: 1.7.0_60
+
 %    Yalmip lastest version
+
 %    Name     Status             Version    Location
+
 % ------------------------------------------------------------
+
 %    Mosek    selected,default   7.1.0.12   {cvx}\mosek\w64
+
 %    SDPT3                       4.0        {cvx}\sdpt3
+
 %    SeDuMi                      1.34       {cvx}\sedumi
-%%
+
 
 *Content of Code Package*
 
