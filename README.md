@@ -11,7 +11,7 @@ The package contains a simulation environment, based on Matlab, that reproduces 
 #Abstract of Article
 
 *System requirement*
-%    MATLAB version: 9.1 (R2016b)
+%    MATLAB version: 9.1 (R2016b) \n
 %    OS: Windows 7 amd64 version 6.1
 %    Java version: 1.7.0_60
 %    Yalmip lastest version
