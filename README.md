@@ -8,26 +8,28 @@ This is a matlab code package is related to our coming article.
 
 The package contains a simulation environment, based on Matlab, that reproduces all the numerical results and figures in the article. We encourage you to also perform reproducible research!
 
+Note that this is the first version of our draft to show only an example of learning path. The full source code will be uploaded soon.
+
 #Abstract of Article
 
 *System requirement*
-%    MATLAB version: 9.1 (R2016b) 
+-  MATLAB version: 9.1 (R2016b) 
 
-%    OS: Windows 7 amd64 version 6.1
+- OS: Windows 7 amd64 version 6.1
 
-%    Java version: 1.7.0_60
+- Java version: 1.7.0_60
 
-%    Yalmip lastest version
+- Yalmip lastest version
 
-%    Name     Status             Version    Location
+ Solver Name ----    Status  ------------  Versionn ------Location
 
-% ------------------------------------------------------------
+ ------------------------------------------------------------
 
-%    Mosek    selected,default   7.1.0.12   {cvx}\mosek\w64
+ Mosek   ------  selected,default --------  7.1.0.12 ----  {cvx}\mosek\w64
 
-%    SDPT3                       4.0        {cvx}\sdpt3
+ SDPT3   ------   --------------------------4.0    ------------    {cvx}\sdpt3
 
-%    SeDuMi                      1.34       {cvx}\sedumi
+ SeDuMi  ------------------------------ 1.34  --------     {cvx}\sedumi
 
 
 *Content of Code Package*
