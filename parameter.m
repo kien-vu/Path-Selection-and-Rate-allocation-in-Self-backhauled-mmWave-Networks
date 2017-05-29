@@ -1,7 +1,7 @@
 
 % This function is used to load the optimization solver, and declare the
 % simulation paramters.
-% loadsolvers();
+loadsolvers();
 global N_Flow % number of flows 
 N_Flow = 2;
 global N_SubF % number of each subflows for each flow, assume that each flow is divided equally
@@ -10,7 +10,7 @@ global N_BSs % the number of SC BSs
 N_BSs = 6;
 global N_Actions % The number of actions : Each user is assumed to choose two paths among 4 paths, then 
 % the number of actions is the combination of choosing 2 from 4.
-N_Actions = 6;
+N_Actions = 6; % number of actions can be large, which depends on your choise
 global Iterations % the number of iterations before eating
 Iterations = 10000;
 global alpha1 % amount of data, user 1 divides for subflow1 and 2

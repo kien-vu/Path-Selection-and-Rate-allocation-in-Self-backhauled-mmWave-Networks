@@ -16,8 +16,8 @@
 clc;
 %  clear all;
 %  close all;
-% rng('shuffle'); %  the random number generator based on the current time so that rand, randi, and randn produce a different sequence of numbers after each time you call rng.
-% random_seed = rng;
+ rng('shuffle'); %  the random number generator based on the current time so that rand, randi, and randn produce a different sequence of numbers after each time you call rng.
+ random_seed = rng;
 rng(random_seed);
 % load the parameter
 parameter;
