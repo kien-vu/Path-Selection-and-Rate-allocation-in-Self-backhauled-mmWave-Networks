@@ -13,13 +13,15 @@ Note that this is the first version of our draft to show only an example of lear
 #Abstract of Article
 
 *System requirement*
--  MATLAB version: 9.1 (R2016b) 
+-  MATLAB version: 9.1 (R2016b)  https://www.mathworks.com/downloads/
 
 - OS: Windows 7 amd64 version 6.1
 
 - Java version: 1.7.0_60
 
-- Yalmip lastest version
+- Yalmip lastest version https://yalmip.github.io/?n=Main.Download
+
+-  Mosek solver version 7 at least : https://www.mosek.com/
 
  Solver Name ----    Status  ------------  Versionn ------Location
 
