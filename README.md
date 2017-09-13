@@ -1,5 +1,5 @@
 # 
-This is a matlab code package is related to our coming article: "Path Selection and Rate Allocation for Ultra-Reliability and Low Latency in mmWave 5G Networks",  in Proc. IEEE Global Commun. Conf., Singapore, Dec. 2017, submitted.
+This is a matlab code package is related to our coming article: "Path Selection and Rate Allocation for Ultra-Reliability and Low Latency in mmWave 5G Networks".
 
 *Title*: 
 
