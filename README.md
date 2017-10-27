@@ -1,7 +1,7 @@
 # 
-This is a matlab code package is related to our coming article: "Path Selection and Rate Allocation for Ultra-Reliability and Low Latency in mmWave 5G Networks".
+This is a matlab code package is related to our coming article: "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks", Submitted to the 2018 IEEE WCNC Conference, 15-18 April 2018, Barcelona, Spain. http://wcnc2018.ieee-wcnc.org/
 
-*Title*: 
+*Title*: Path Selection and Rate Allocation in Self-Backhauled mmWave Networks
 
 
 #Authors: Trung Kien Vu
@@ -11,6 +11,15 @@ The package contains a simulation environment, based on Matlab, that reproduces 
 Note that this is the first version of our draft to show only an example of learning path. The full source code will be uploaded later.
 
 #Abstract of Article
+
+# Tools
+- Lyapunov Optimization
+
+- Reinforcement Learning
+
+- Non-convex Optimization Techinique
+
+- Dynamic Programming 
 
 *System requirement*
 -  MATLAB version: 9.1 (R2016b)  https://www.mathworks.com/downloads/
