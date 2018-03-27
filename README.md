@@ -1,5 +1,5 @@
 # 
-This is a matlab code package is related to our coming article: "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks", Submitted to the 2018 IEEE WCNC Conference, 15-18 April 2018, Barcelona, Spain. http://wcnc2018.ieee-wcnc.org/
+This is a matlab code package is related to our article: "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks",  Proc. IEEE Wireless Commun. Netw. Conf., Apr. 2018, pp. 2371-2376, 15-18 April 2018, Barcelona, Spain. http://wcnc2018.ieee-wcnc.org/
 
 *Title*: Path Selection and Rate Allocation in Self-Backhauled mmWave Networks
 
@@ -8,7 +8,7 @@ This is a matlab code package is related to our coming article: "Path Selection 
 
 The package contains a simulation environment, based on Matlab, that reproduces all the numerical results and figures in the article. We encourage you to also perform reproducible research!
 
-Note that this is the first version of our draft to show only an example of learning path. The full source code will be uploaded later.
+Note that this is the first version of our draft to show an example of learning path. The full source code will be uploaded later.
 
 #Abstract of Article
 
