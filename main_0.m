@@ -44,7 +44,7 @@ class_Probability                 = 1/N_Actions*ones(N_Flow,N_Actions,Iterations
 class_selected_action             = zeros(N_Flow,Iterations);
 
 % learning rate and initial setting
-kappa = [2 5 100 200]; % Boltzmann temperature
+kappa = [2 5 10 50]; % Boltzmann temperature
 X = [1 2 3 4 5 6]; % Action index
 %% Lyapunov Parameters
 network_queue   = zeros( N_SubF, 1 + N_BSs, Iterations); % Number of base stations, with number of subflows (4)
@@ -57,7 +57,7 @@ indicator_bs    = zeros(N_BSs+1,N_SubF,Iterations);      % which BS turns on
 delay_require   = zeros( N_SubF, 1 + N_BSs, Iterations); % Data required for delay
 transmit_power  = zeros( 1 + N_BSs, N_SubF, Iterations); % transmit power
 % Optimization setup
-beta1 = 3; % lets say we can guarantee up to 3
+beta1 = 4; % lets say we can guarantee up to 4
 epsilon1 = 0.05; % Probabilistic delay constraint
 %% Simulation starts
 % Learning part runs for a long term period, let says after 10 slots, while
