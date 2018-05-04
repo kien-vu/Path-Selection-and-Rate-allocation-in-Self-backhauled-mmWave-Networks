@@ -1,10 +1,7 @@
-#
-This is a matlab code package is related to our coming article: Path Selection and Rate allocation for Ultra-Reliable and Low Latency in mmWave 5G Networks
 
+#This is a matlab code package is related to our article: "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks", Proc. IEEE Wireless Commun. Netw. Conf., Apr. 2018, pp. 2371-2376, 15-18 April 2018, Barcelona, Spain. http://wcnc2018.ieee-wcnc.org/
 
-
-*Title*: 
-
+#Title: Path Selection and Rate Allocation in Self-Backhauled mmWave Networks
 
 #Authors: Trung Kien Vu
 
