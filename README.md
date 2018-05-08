@@ -1,5 +1,5 @@
 # 
-This is a matlab code package is related to our article: "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks",  Proc. IEEE Wireless Commun. Netw. Conf., Apr. 2018, pp. 2371-2376, 15-18 April 2018, Barcelona, Spain. http://wcnc2018.ieee-wcnc.org/
+This is a matlab code package, which related to our article: "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks", Proc. IEEE Wireless Commun. Netw. Conf., pp. 2371-2376, 15-18 April 2018, Barcelona, Spain, and "Ultra-Reliable Communication in 5G mmWave Networks: A Risk-Sensitive Approach." IEEE Communications Letters 22.4 (2018): 708-711.
 
 *Title*: Path Selection and Rate Allocation in Self-Backhauled mmWave Networks
 
