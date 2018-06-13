@@ -62,7 +62,7 @@ RT.action(6).route2 = [1 6];
   u_next = ones(nBS, nSF);
   tx_next = ones(nBS, nSF);
     
-while(1) % Use to find the adaptive control parameter by using convex concave procedure
+while(1)
 % Define variable
 %     rate        = sdpvar(nBS, nSF);
     tx          = sdpvar(nBS, nSF);
