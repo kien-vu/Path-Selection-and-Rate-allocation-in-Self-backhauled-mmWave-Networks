@@ -48,7 +48,7 @@ RT.action(6).route2 = [1 6];
   n = 15; % ensuring that error accurancy is less than 10^-5 
   ObjFun = 1e-8;
   lowerbound = lowerbound.* indicator_BSs;
-while(1)% Use to find the adaptive control parameter by using convex concave procedure
+while(1)
 % Define variable
 % rate        = sdpvar(nBS, nSF);
     tx          = sdpvar(nBS, nSF);
