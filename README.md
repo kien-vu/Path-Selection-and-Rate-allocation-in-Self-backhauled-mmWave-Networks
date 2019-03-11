@@ -3,7 +3,7 @@ This matlab code package is related to our articles:
 
 [A1] "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks", Proc. IEEE Wireless Commun. Netw. Conf., pp. 2371-2376, 15-18 April 2018, Barcelona, Spain.
 
-[A2] "Joint Path Selection and Rate Allocation Framework for 5G Self-Backhauled mmWave Networks", IEEE Transactions on Wireless Communications, IEEE Transactions on Wireless Communications (2019).
+[A2] "Joint Path Selection and Rate Allocation Framework for 5G Self-Backhauled mmWave Networks", DOI (identifier) 10.1109/TWC.2019.2904275, for publication in IEEE Transactions on Wireless Communications (2019).
 
 [A3] "Ultra-Reliable Communication in 5G mmWave Networks: A Risk-Sensitive Approach." IEEE Communications Letters 22.4 (2018): 708-711.
 
