@@ -3,7 +3,7 @@ This matlab code package is related to our articles:
 
 [A1] "Path Selection and Rate Allocation in Self-Backhauled mmWave Networks", Proc. IEEE Wireless Commun. Netw. Conf., pp. 2371-2376, 15-18 April 2018, Barcelona, Spain.
 
-[A2] "Joint Path Selection and Rate Allocation Framework for 5G Self-Backhauled mmWave Networks", IEEE Transactions on Wireless Communications, under review, xx.xx (2018): xxxx-xxxx.
+[A2] "Joint Path Selection and Rate Allocation Framework for 5G Self-Backhauled mmWave Networks", IEEE Transactions on Wireless Communications, IEEE Transactions on Wireless Communications (2019).
 
 [A3] "Ultra-Reliable Communication in 5G mmWave Networks: A Risk-Sensitive Approach." IEEE Communications Letters 22.4 (2018): 708-711.
 
@@ -16,14 +16,14 @@ The package contains a simulation environment, based on Matlab, that reproduces 
 
 #Abstract of Article
 
+Owing to severe path loss and unreliable transmission over a long distance at higher frequency bands, we investigate the problem of path selection and rate allocation for multi-hop self-backhaul millimeter wave (mmWave) networks. Enabling multi-hop mmWave transmissions raises a potential issue of increased latency, and thus, in this work we aim at addressing the fundamental questions: how to select the best multi-hop paths and how to allocate rates over these paths subject to latency constraints? In this regard, we propose a new system design, which exploits multiple antenna diversity, mmWave bandwidth, and traffic splitting techniques to improve the downlink transmission. The studied problem is cast as a network utility maximization, subject to an upper delay bound constraint, network stability, and network dynamics. By leveraging stochastic optimization, the problem is decoupled into: path selection and rate allocation sub-problems, whereby a framework which selects the best paths is proposed using reinforcement learning techniques. Moreover, the rate allocation is a nonconvex program, which is converted into a convex one by using the successive convex approximation method. Via mathematical analysis, we provide a comprehensive performance analysis and convergence proofs for the proposed solution. Numerical results show that our approach ensures reliable communication with a guaranteed probability of up to 99.9999%, and reduces latency by 50.64% and 92.9% as compared to baseline models. Furthermore, the results showcase the key trade-off between latency and network arrival rate.
+
 # Tools
 - Lyapunov Optimization
 
 - Reinforcement Learning
 
 - Non-convex Optimization Techinique
-
-- Dynamic Programming 
 
 *System requirement*
 -  MATLAB version: 9.1 (R2016b)  https://www.mathworks.com/downloads/
