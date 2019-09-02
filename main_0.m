@@ -1,6 +1,6 @@
 
 %%
-% Authors: Trung Kien Vu
+% Authors: Kien Vu
 %    Date Update on 2017 Feb 14
 %    MATLAB version: 9.1 (R2016b)
 %    OS: Windows 7 amd64 version 6.1
@@ -47,8 +47,8 @@ class_selected_action             = zeros(N_Flow,Iterations);
 kappa = [2 5 10 50]; % Boltzmann temperature
 X = [1 2 3 4 5 6]; % Action index
 %% Lyapunov Parameters
-network_queue   = zeros( N_SubF, 1 + N_BSs, Iterations); % Number of base stations, with number of subflows (4)
-virtual_queue   = 1/Iterations*ones( N_SubF, 1 + N_BSs, Iterations); % Number of base stations, with number of subflows (4)
+network_queue   = zeros( N_SubF, 1 + N_BSs, Iterations); % Network queue
+virtual_queue   = 1/Iterations*ones( N_SubF, 1 + N_BSs, Iterations); % virture queue
 serving_rate    = zeros( N_SubF, 1 + N_BSs, Iterations); % serving rate
 remaining_data  = zeros( N_SubF, 1 + N_BSs, Iterations); % reamining data
 incoming_data   = zeros( N_SubF, 1 + N_BSs, Iterations); % incomming data
@@ -75,10 +75,10 @@ for iter = 2:Iterations
      selected_action(1,iter) = get_x_from_pmf(X,Probability(1,:,iter-1));
      selected_action(2,iter) = get_x_from_pmf(X,Probability(2,:,iter-1));
     % Receive the feeback if two players play the same action or not, now
-    % just check number of playing same actions
+    % Check number of playing same actions
     if check_action(selected_action(1,iter), selected_action(2,iter)) == 1       
          Learning_Utility_Observe(:,:,iter) = cal_gameutility( network_queue(:,:,iter-1)); % Congested_BSs(:,iter)
-    else % should punnish when playing same action
+    else % should punish when playing same action
         same_action = same_action + 1;
         Learning_Utility_Observe(:,:,iter) = 1/2 * cal_gameutility( network_queue(:,:,iter-1) );
     end
@@ -126,7 +126,7 @@ for iter = 2:Iterations
         auxiliary_var(:,:,iter) = auxiliary_var_selection(virtual_queue(:,:,iter));
         indicator_BSs = routingtable (selected_action(:,iter));
         auxiliary_var(:,:,iter) = auxiliary_var(:,:,iter).*indicator_BSs';
-        % Calculate the remain traffic by adding the incoming and subtract the outcoming
+        % Calculate the remaining traffic by adding the incoming and subtract the outcoming
         % Calculate the delay required
         for nbs = 1:N_BSs+1
             for nsf = 1:N_SubF
@@ -164,7 +164,7 @@ for iter = 2:Iterations
         auxiliary_var(:,:,iter) = auxiliary_var_selection(virtual_queue(:,:,iter));
         indicator_BSs = routingtable (selected_action(:,iter));
         auxiliary_var(:,:,iter) = auxiliary_var(:,:,iter).*indicator_BSs';
-        % Calculate the remain traffic by adding the incoming and subtract the outcoming
+        % Calculate the remaining traffic by adding the incoming and subtract the outcoming
         % Calculate the delay required
         for nbs = 1:N_BSs+1
             for nsf = 1:N_SubF
@@ -175,7 +175,7 @@ for iter = 2:Iterations
         % Rate Allocation
         serving_rate(:,:,iter)  =   serving_rate(:,:,iter-1);
         transmit_power(:,:,iter)=   transmit_power(:,:,iter-1) ; % possible transmit power
-        % need to determind any remaining traffic in the queue at previous time slot
+        % need to determine any remaining traffic in the queue at previous time slot
         incoming_data(:,:,iter) =   incoming_traffic_0(selected_action(:,iter), transmit_power(:,:,iter), network_queue(:,:,iter-1)); % network_queue(:,:,iter-1)
         % Network queue update, 
         alpha1 = 0; % no data arrive this point
@@ -186,7 +186,7 @@ for iter = 2:Iterations
             auxiliary_var(:,:,iter), serving_rate(:,:,iter));
        alpha1 = alpha2 ; % restore
     end
-%% baselines
+%% baselines 
         
 end
 
